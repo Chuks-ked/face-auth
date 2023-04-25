@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+Logged in as: {{request.user.username}}
+
+<br><br>
+
+<a href="{% url 'logout' %}" class='btn btn-danger'>Log Out</a>
+{% endblock  %}
